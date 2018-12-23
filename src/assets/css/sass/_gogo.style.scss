@@ -7224,6 +7224,10 @@ input:-webkit-autofill {
 
 /* Timeline */
 
+.error {
+    color: $error-color;
+}
+
 .timeline {
   list-style: none;
   padding: 10px 0;

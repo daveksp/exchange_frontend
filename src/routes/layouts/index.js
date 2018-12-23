@@ -6,6 +6,7 @@ import thumbList from './thumb-list';
 import imageList from './image-list';
 import search from './search';
 import details from './details';
+import wallet from './wallet';
 
 const Layouts = ({ match }) => (
     <div className="dashboard-wrapper">
@@ -15,7 +16,8 @@ const Layouts = ({ match }) => (
             <Route path={`${match.url}/thumb-list`} component={thumbList} />            
             <Route path={`${match.url}/image-list`} component={imageList} />            
             <Route path={`${match.url}/details`} component={details} />            
-            <Route path={`${match.url}/search`} component={search} />  
+            <Route path={`${match.url}/search`} component={search} />
+            <Route path={`${match.url}/wallet`} component={wallet} />
             <Redirect to="/error" />
           
         </Switch>

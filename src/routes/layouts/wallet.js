@@ -21,7 +21,8 @@ import {
   CardImg,
   Label,
   CardText,
-  Badge
+  Badge,
+  Progress
 } from "reactstrap";
 import { NavLink } from "react-router-dom";
 import Select from "react-select";
@@ -38,10 +39,11 @@ import { ContextMenu, MenuItem, ContextMenuTrigger } from "react-contextmenu";
 function collect(props) {
   return { data: props.data };
 }
+//const apiUrl ="http://api.crealeaf.com/cakes/paging"
 const apiUrl ="http://127.0.0.1:7700/notifications/api/v1/products"
 import axios from 'axios';
 
-class ImageListLayout extends Component {
+class WalletLayout extends Component {
     constructor(props) {
       super(props);
       this.toggleDisplayOptions = this.toggleDisplayOptions.bind(this);
@@ -53,7 +55,7 @@ class ImageListLayout extends Component {
 
 
       this.state = {
-        displayMode: "imagelist",
+        displayMode: "thumblist",
         pageSizes: [8, 12, 24],
         selectedPageSize: 8,
         categories:  [
@@ -63,7 +65,7 @@ class ImageListLayout extends Component {
         ],
         orderOptions:[
           {column: "title",label: "Product Name"},
-          {column: "category",label: "Category"},
+          {column: "position",label: "Position"},
           {column: "status",label: "Status"}
         ],
         selectedOrderOption:  {column: "title",label: "Product Name"},
@@ -225,7 +227,6 @@ class ImageListLayout extends Component {
       .then(res => {
         return res.data        
       }).then(data=>{
-
         this.setState({
           totalPage: data.totalPage,
           items: data.data,
@@ -264,12 +265,6 @@ class ImageListLayout extends Component {
           <div className="disable-text-selection">
             <Row>
               <Colxx xxs="12">
-                <div className="mb-2">
-                  <h1>
-                    <IntlMessages id="menu.image-list" />
-                  </h1>
-                </div>
-
                 <div className="mb-2">
                   <Button
                     color="empty"
@@ -342,76 +337,7 @@ class ImageListLayout extends Component {
             </Row>
             <Row>
               {this.state.items.map(product => {
-                if (this.state.displayMode === "imagelist") {
-                  return (
-                    <Colxx
-                      sm="6"
-                      lg="4"
-                      xl="3"
-                      className="mb-3"
-                      key={product.id}
-                    >
-                      <ContextMenuTrigger
-                        id="menu_id"
-                        data={product.id}
-                        collect={collect}
-                      >
-                        <Card
-                          onClick={event =>
-                            this.handleCheckChange(event, product.id)
-                          }
-                          className={classnames({
-                            active: this.state.selectedItems.includes(
-                              product.id
-                            )
-                          })}
-                        >
-                          <div className="position-relative">
-                            <NavLink
-                              to={`?p=${product.id}`}
-                              className="w-40 w-sm-100"
-                            >
-                              <CardImg
-                                top
-                                alt={product.title}
-                                src={product.img}
-                              />
-                            </NavLink>
-                            <Badge
-                              color={product.statusColor}
-                              pill
-                              className="position-absolute badge-top-left"
-                            >
-                              {product.status}
-                            </Badge>
-                          </div>
-                          <CardBody>
-                            <Row>
-                              <Colxx xxs="2">
-                                <CustomInput
-                                  className="itemCheck mb-0"
-                                  type="checkbox"
-                                  id={`check_${product.id}`}
-                                  checked={this.state.selectedItems.includes(
-                                    product.id
-                                  )}
-                                  onChange={() => {}}
-                                  label=""
-                                />
-                              </Colxx>
-                              <Colxx xxs="10" className="mb-3">
-                                <CardSubtitle>{product.title}</CardSubtitle>
-                                <CardText className="text-muted text-small mb-0 font-weight-light">
-                                  {product.date}
-                                </CardText>
-                              </Colxx>
-                            </Row>
-                          </CardBody>
-                        </Card>
-                      </ContextMenuTrigger>
-                    </Colxx>
-                  );
-                } else if (this.state.displayMode === "thumblist") {
+
                   return (
                     <Colxx xxs="12" key={product.id} className="mb-3">
                       <ContextMenuTrigger
@@ -450,10 +376,16 @@ class ImageListLayout extends Component {
                                 </p>
                               </NavLink>
                               <p className="mb-1 text-muted text-small w-15 w-sm-100">
-                                {product.category}
+                                {product.my_shares}
                               </p>
                               <p className="mb-1 text-muted text-small w-15 w-sm-100">
-                                {product.date}
+                                {product.share_price}
+                              </p>
+                              <p className="mb-1 text-small w-15 w-sm-100">
+                                {product.variation_price}
+                              </p>
+                              <p className="mb-1 text-muted text-small w-15 w-sm-100">
+                                {product.share_price * product.my_shares}
                               </p>
                               <div className="w-15 w-sm-100">
                                 <Badge color={product.statusColor} pill>
@@ -461,81 +393,12 @@ class ImageListLayout extends Component {
                                 </Badge>
                               </div>
                             </div>
-                            <div className="custom-control custom-checkbox pl-1 align-self-center pr-4">
-                              <CustomInput
-                                className="itemCheck mb-0"
-                                type="checkbox"
-                                id={`check_${product.id}`}
-                                checked={this.state.selectedItems.includes(
-                                  product.id
-                                )}
-                                onChange={() => {}}
-                                label=""
-                              />
-                            </div>
                           </div>
                         </Card>
                       </ContextMenuTrigger>
                     </Colxx>
                   );
-                } else {
-                  return (
-                    <Colxx xxs="12" key={product.id} className="mb-3">
-                      <ContextMenuTrigger
-                        id="menu_id"
-                        data={product.id}
-                        collect={collect}
-                      >
-                        <Card
-                          onClick={event =>
-                            this.handleCheckChange(event, product.id)
-                          }
-                          className={classnames("d-flex flex-row", {
-                            active: this.state.selectedItems.includes(
-                              product.id
-                            )
-                          })}
-                        >
-                          <div className="pl-2 d-flex flex-grow-1 min-width-zero">
-                            <div className="card-body align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero align-items-lg-center">
-                              <NavLink
-                                to={`?p=${product.id}`}
-                                className="w-40 w-sm-100"
-                              >
-                                <p className="list-item-heading mb-1 truncate">
-                                  {product.title}
-                                </p>
-                              </NavLink>
-                              <p className="mb-1 text-muted text-small w-15 w-sm-100">
-                                {product.category}
-                              </p>
-                              <p className="mb-1 text-muted text-small w-15 w-sm-100">
-                                {product.date}
-                              </p>
-                              <div className="w-15 w-sm-100">
-                                <Badge color={product.statusColor} pill>
-                                  {product.status}
-                                </Badge>
-                              </div>
-                            </div>
-                            <div className="custom-control custom-checkbox pl-1 align-self-center pr-4">
-                              <CustomInput
-                                className="itemCheck mb-0"
-                                type="checkbox"
-                                id={`check_${product.id}`}
-                                checked={this.state.selectedItems.includes(
-                                  product.id
-                                )}
-                                onChange={() => {}}
-                                label=""
-                              />
-                            </div>
-                          </div>
-                        </Card>
-                      </ContextMenuTrigger>
-                    </Colxx>
-                  );
-                }
+
               })}
               <Pagination
                 currentPage={this.state.currentPage}
@@ -572,4 +435,4 @@ class ImageListLayout extends Component {
       );
     }
   }
-  export default injectIntl(mouseTrap(ImageListLayout))
+  export default injectIntl(mouseTrap(WalletLayout))

@@ -312,7 +312,7 @@ class Sidebar extends Component {
                   })}
                 >
                   <NavLink
-                    to="/app/layouts/thumb-list"
+                    to="/app/layouts/wallet"
                   >
                     <i className="iconsmind-Wallet-2" />{" "}
                     <IntlMessages id="menu.landingpage" />
