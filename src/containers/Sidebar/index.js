@@ -274,7 +274,8 @@ class Sidebar extends Component {
                   })}
                 >
                   <NavLink
-                    to="/app/layouts/image-list"
+                    to="/app/layouts/campaigns"
+                    onClick={e => this.openSubMenu(e, "layouts")}
                   >
                     <i className="iconsmind-Soccer-Shoes" />{" "}
                     <IntlMessages id="menu.layouts" />
@@ -359,12 +360,25 @@ class Sidebar extends Component {
                   </NavLink>
                 </NavItem>
               </Nav>
+
               <Nav
                 className={classnames({
                   "d-block": ((this.state.selectedParentMenu == "layouts" && this.state.viewingParentMenu=="" )|| this.state.viewingParentMenu=="layouts")
                 })}
                 data-parent="layouts"
               >
+                <NavItem>
+                  <NavLink to="/app/layouts/campaigns">
+                    <i className="iconsmind-Financial" />{" "}
+                    <IntlMessages id="menu.campaigns" />
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink to="/app/layouts/image-list">
+                    <i className="iconsmind-Football-2" />{" "}
+                    <IntlMessages id="menu.all-players" />
+                  </NavLink>
+                </NavItem>
               </Nav>
               <Nav
                 className={classnames({

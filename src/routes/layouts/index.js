@@ -7,6 +7,7 @@ import imageList from './image-list';
 import search from './search';
 import details from './details';
 import wallet from './wallet';
+import campaigns from './campaigns';
 
 const Layouts = ({ match }) => (
     <div className="dashboard-wrapper">
@@ -18,6 +19,7 @@ const Layouts = ({ match }) => (
             <Route path={`${match.url}/details`} component={details} />            
             <Route path={`${match.url}/search`} component={search} />
             <Route path={`${match.url}/wallet`} component={wallet} />
+            <Route path={`${match.url}/campaigns`} component={campaigns} />
             <Redirect to="/error" />
           
         </Switch>

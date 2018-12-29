@@ -69,6 +69,8 @@ module.exports = {
   "menu.error": "Error",
   "menu.applications": "Aplicaciones",
   "menu.todo": "Notas",
+  "menu.campaigns": "Campanhas",
+  "menu.all-players": "Todos Jogadores",
   "menu.survey": "Encuesta",
   "menu.chat": "Chatea",
   "menu.ui": "IU",

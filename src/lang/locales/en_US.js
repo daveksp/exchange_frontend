@@ -70,6 +70,8 @@ module.exports = {
   "menu.error": "Error",
   "menu.applications": "Players",
   "menu.todo": "To-do List",
+  "menu.campaigns": "Campaigns",
+  "menu.all-players": "All Players",
   "menu.survey": "Survey",
   "menu.chat": "Chat",
   "menu.ui": "Social",

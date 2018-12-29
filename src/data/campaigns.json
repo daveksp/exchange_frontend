@@ -12,12 +12,14 @@
 		"status": "COMPLETE",
 		"statusColor": "success",
 		"description": "Homemade cheesecake with fresh berries and mint",
-		"my_shares": 10,
+		"sold_shares": 10,
 		"total_shares": 20000,
 		"share_price": "50.00",
-		"variation_price": "+1.00",
-		"variation": "success",
-		"valuation": "40.000.000"
+		"valuation": "40.000.000",
+		"from": "gremio",
+		"to": "cruzeiro",
+		"from_crest": "/assets/img/crests/gremio_30x30.png",
+		"to_crest": ""
 	}, {
 		"id": 8,
 		"title": "Arthur",
@@ -26,12 +28,14 @@
 		"status": "IN PROGRESS",
 		"statusColor": "info",
 		"description": "Delicious vegan chocolate cake",
-		"my_shares": 30,
+		"sold_shares": 30,
 		"total_shares": 20000,
 		"share_price": "50.00",
-		"variation_price": "+1.50",
-		"variation": "success",
-		"valuation": "50.000.000"
+		"valuation": "50.000.000",
+		"from": "gremio",
+		"to": "gremio",
+		"from_crest": "/assets/img/crests/gremio_30x30.png",
+		"to_crest": "/assets/img/crests/cruzeiro_30.png"
 	}, {
 		"id": 3,
 		"title": "Walter Kanneman",
@@ -40,12 +44,14 @@
 		"status": "IN PROGRESS",
 		"statusColor": "info",
 		"description": "Homemade cheesecake with fresh berries and mint",
-		"my_shares": 25,
+		"sold_shares": 25,
 		"total_shares": 10000,
 		"share_price": "50.00",
-		"variation_price": "-3.00",
-		"variation": "error",
-		"valuation": "20.000.000"
+		"valuation": "20.000.000",
+		"from": "gremio",
+		"to": "corinthians",
+		"from_crest": "/assets/img/crests/gremio_30x30.png",
+		"to_crest": "/assets/img/crests/cruzeiro_30.png"
 	}, {
 		"id": 19,
 		"title": "Vinicius Junior",
@@ -54,12 +60,14 @@
 		"status": "COMPLETE",
 		"statusColor": "success",
 		"description": "Cheesecake with chocolate cookies and Cream biscuits",
-		"my_shares": 100,
+		"sold_shares": 100,
 		"total_shares": 20000,
 		"share_price": "50.00",
-		"variation_price": "0.00",
-		"variation": "",
-		"valuation": "80.000.000"
+		"valuation": "80.000.000",
+		"from": "flamengo",
+		"to": "flamengo",
+		"from_crest": "/assets/img/crests/gremio_30x30.png",
+		"to_crest": "/assets/img/crests/cruzeiro_30.png"
 	}, {
 		"id": 2,
 		"title": "Pedrinho",
@@ -68,12 +76,14 @@
 		"status": "COMPLETE",
 		"statusColor": "success",
 		"description": "Cheesecake with chocolate cookies and Cream biscuits",
-		"my_shares": 5,
+		"sold_shares": 5,
 		"total_shares": 5000,
 		"share_price": "50.00",
-		"variation_price": "+10.00",
-		"variation": "success",
-		"valuation": "15.000.000"
+		"valuation": "15.000.000",
+		"from": "corinthians",
+		"to": "athletico paranaense",
+		"from_crest": "/assets/img/crests/gremio_30x30.png",
+		"to_crest": "/assets/img/crests/cruzeiro_30.png"
 	}, {
 		"id": 9,
 		"title": "Thiago Neves",
@@ -82,12 +92,14 @@
 		"status": "IN PROGRESS",
 		"statusColor": "info",
 		"description": "White chocolate strawberry yogurt cake decorated with fresh fruits and chocolate",
-		"my_shares": 7,
+		"sold_shares": 7,
 		"total_shares": 15000,
 		"share_price": "50.00",
-		"variation_price": "0.00",
-		"variation": "",
-		"valuation": "8.000.000"
+		"valuation": "8.000.000",
+		"from": "cruzeiro",
+		"to": "gremio",
+		"from_crest": "/assets/img/crests/gremio_30x30.png",
+		"to_crest": "/assets/img/crests/cruzeiro_30.png"
 	}, {
 		"id": 17,
 		"title": "Dede",
@@ -96,12 +108,14 @@
 		"status": "FAIL",
 		"statusColor": "secondary",
 		"description": "Chocolate cake with berries",
-		"my_shares": 7,
+		"sold_shares": 7,
 		"total_shares": 5000,
 		"share_price": "50.00",
-		"variation_price": "+1.00",
-		"variation": "success",
-		"valuation": "13.000.000"
+		"valuation": "13.000.000",
+		"from": "cruzeiro",
+		"to": "internacional",
+		"from_crest": "/assets/img/crests/gremio_30x30.png",
+		"to_crest": "/assets/img/crests/cruzeiro_30.png"
 	}, {
 		"id": 10,
 		"title": "Pablo",
@@ -110,12 +124,14 @@
 		"status": "IN PROGRESS",
 		"statusColor": "info",
 		"description": "Christmas fruit cake, pudding on top",
-		"my_shares": 3,
+		"sold_shares": 3,
 		"total_shares": 10000,
 		"share_price": "50.00",
-		"variation_price": "-5.00",
-		"variation": "error",
-		"valuation": "8.500.000"
+		"valuation": "8.500.000",
+		"from": "athletico paranaense",
+		"to": "botafogo",
+		"from_crest": "/assets/img/crests/gremio_30x30.png",
+		"to_crest": "/assets/img/crests/cruzeiro_30.png"
 	}, {
 		"id": 11,
 		"title": "Marquinhos Gabriel",
@@ -124,12 +140,14 @@
 		"status": "COMPLETE",
 		"statusColor": "success",
 		"description": "Wedding cake decorated with donuts and wild berries",
-		"my_shares": 5,
+		"sold_shares": 5,
 		"total_shares": 10000,
 		"share_price": "50.00",
-		"variation_price": "+1.00",
-		"variation": "success",
-		"valuation": "12.000.000"
+		"valuation": "12.000.000",
+		"from": "corinthians",
+		"to": "sport",
+		"from_crest": "/assets/img/crests/gremio_30x30.png",
+		"to_crest": "/assets/img/crests/cruzeiro_30.png"
 	}, {
 		"id": 4,
 		"title": "Paulinho",
@@ -138,11 +156,13 @@
 		"status": "IN PROGRESS",
 		"statusColor": "info",
 		"description": "Chocolate cake with berries",
-		"my_shares": 3,
+		"sold_shares": 3,
 		"total_shares": 30000,
 		"share_price": "50.00",
-		"variation_price": "+1.00",
-		"variation": "success",
-		"valuation": "54.000.000"
+		"valuation": "54.000.000",
+		"from": "barcelona",
+		"to": "atletico mineiro",
+		"from_crest": "/assets/img/crests/gremio_30x30.png",
+		"to_crest": "/assets/img/crests/cruzeiro_30.png"
 	}]
 }
