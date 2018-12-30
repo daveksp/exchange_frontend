@@ -39,6 +39,7 @@ Table of Contents
 34.Floating Label
 35.Loading
 36.Context Menu
+37.New Components
 */
 
 /* 00.Variables and Imports */
@@ -5587,6 +5588,7 @@ input:-webkit-autofill {
 
 /* 33.Icons */
 .transfers {
+    margin: auto;
     color: green;
     font-size: 19px;
 }
@@ -7384,3 +7386,11 @@ input:-webkit-autofill {
     }
   }
 }
+
+/* 37.New Components */
+.transfer-sign-container{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+

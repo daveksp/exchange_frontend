@@ -398,18 +398,18 @@ class CampaignsLayout extends Component {
                             <Row>
                               <Colxx xxs="2" className="mb-8">
                                 <img
-                                  src={product.from_crest}
+                                  src={product.to_crest}
                                   alt="Notification"
                                   className="xsmall border-0 rounded-circle"
                                 />
                               </Colxx>
-                              <Colxx xxs="2" className="mb-8">
+                              <Colxx xxs="1" className="mb-8 transfer-sign-container">
                                 <div class="transfers simple-icon-arrow-left-circle">
                                 </div>
                               </Colxx>
                               <Colxx xxs="2" className="mb-8">
                                 <img
-                                  src={product.to_crest}
+                                  src={product.from_crest}
                                   alt="Notification"
                                   className="xsmall border-0 rounded-circle"
                                 />
