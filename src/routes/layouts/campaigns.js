@@ -138,6 +138,9 @@ class CampaignsLayout extends Component {
         () => this.dataListRender()
       );
     }
+    parseCurrency( num ) {
+        return parseFloat( num.replace( /,/g, '') );
+    }
 
     handleKeyPress(e) {
       if (e.key === "Enter") {
@@ -399,7 +402,7 @@ class CampaignsLayout extends Component {
                               <Colxx xxs="2" className="mb-8">
                                 <img
                                   src={product.to_crest}
-                                  alt="Notification"
+                                  alt={product.to}
                                   className="xsmall border-0 rounded-circle"
                                 />
                               </Colxx>
@@ -410,7 +413,7 @@ class CampaignsLayout extends Component {
                               <Colxx xxs="2" className="mb-8">
                                 <img
                                   src={product.from_crest}
-                                  alt="Notification"
+                                  alt={product.from}
                                   className="xsmall border-0 rounded-circle"
                                 />
                               </Colxx>
@@ -419,134 +422,10 @@ class CampaignsLayout extends Component {
                           <div className="position-relative">
                             <p className="mb-2">
                                 <span className="float-right text-muted">
-                                    {300}/{5000}
+                                    {product.raised}/{product.valuation}
                                 </span>
                             </p>
-                            <Progress value={(300 / 5000) * 100} />
-                          </div>
-                        </Card>
-                      </ContextMenuTrigger>
-                    </Colxx>
-                  );
-                } else if (this.state.displayMode === "thumblist") {
-                  return (
-                    <Colxx xxs="12" key={product.id} className="mb-3">
-                      <ContextMenuTrigger
-                        id="menu_id"
-                        data={product.id}
-                        collect={collect}
-                      >
-                        <Card
-                          onClick={event =>
-                            this.handleCheckChange(event, product.id)
-                          }
-                          className={classnames("d-flex flex-row", {
-                            active: this.state.selectedItems.includes(
-                              product.id
-                            )
-                          })}
-                        >
-                          <NavLink
-                            to={`?p=${product.id}`}
-                            className="d-flex"
-                          >
-                            <img
-                              alt={product.title}
-                              src={product.img}
-                              className="list-thumbnail responsive border-0"
-                            />
-                          </NavLink>
-                          <div className="pl-2 d-flex flex-grow-1 min-width-zero">
-                            <div className="card-body align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero align-items-lg-center">
-                              <NavLink
-                                to={`?p=${product.id}`}
-                                className="w-40 w-sm-100"
-                              >
-                                <p className="list-item-heading mb-1 truncate">
-                                  {product.title}
-                                </p>
-                              </NavLink>
-                              <p className="mb-1 text-muted text-small w-15 w-sm-100">
-                                {product.category}
-                              </p>
-                              <p className="mb-1 text-muted text-small w-15 w-sm-100">
-                                {product.date}
-                              </p>
-                              <div className="w-15 w-sm-100">
-                                <Badge color={product.statusColor} pill>
-                                  {product.status}
-                                </Badge>
-                              </div>
-                            </div>
-                            <div className="custom-control custom-checkbox pl-1 align-self-center pr-4">
-                              <CustomInput
-                                className="itemCheck mb-0"
-                                type="checkbox"
-                                id={`check_${product.id}`}
-                                checked={this.state.selectedItems.includes(
-                                  product.id
-                                )}
-                                onChange={() => {}}
-                                label=""
-                              />
-                            </div>
-                          </div>
-                        </Card>
-                      </ContextMenuTrigger>
-                    </Colxx>
-                  );
-                } else {
-                  return (
-                    <Colxx xxs="12" key={product.id} className="mb-3">
-                      <ContextMenuTrigger
-                        id="menu_id"
-                        data={product.id}
-                        collect={collect}
-                      >
-                        <Card
-                          onClick={event =>
-                            this.handleCheckChange(event, product.id)
-                          }
-                          className={classnames("d-flex flex-row", {
-                            active: this.state.selectedItems.includes(
-                              product.id
-                            )
-                          })}
-                        >
-                          <div className="pl-2 d-flex flex-grow-1 min-width-zero">
-                            <div className="card-body align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero align-items-lg-center">
-                              <NavLink
-                                to={`?p=${product.id}`}
-                                className="w-40 w-sm-100"
-                              >
-                                <p className="list-item-heading mb-1 truncate">
-                                  {product.title}
-                                </p>
-                              </NavLink>
-                              <p className="mb-1 text-muted text-small w-15 w-sm-100">
-                                {product.category}
-                              </p>
-                              <p className="mb-1 text-muted text-small w-15 w-sm-100">
-                                {product.date}
-                              </p>
-                              <div className="w-15 w-sm-100">
-                                <Badge color={product.statusColor} pill>
-                                  {product.status}
-                                </Badge>
-                              </div>
-                            </div>
-                            <div className="custom-control custom-checkbox pl-1 align-self-center pr-4">
-                              <CustomInput
-                                className="itemCheck mb-0"
-                                type="checkbox"
-                                id={`check_${product.id}`}
-                                checked={this.state.selectedItems.includes(
-                                  product.id
-                                )}
-                                onChange={() => {}}
-                                label=""
-                              />
-                            </div>
+                            <Progress value={(this.parseCurrency(product.raised) /this.parseCurrency(product.valuation)) * 100} />
                           </div>
                         </Card>
                       </ContextMenuTrigger>

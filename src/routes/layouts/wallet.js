@@ -39,8 +39,7 @@ import { ContextMenu, MenuItem, ContextMenuTrigger } from "react-contextmenu";
 function collect(props) {
   return { data: props.data };
 }
-//const apiUrl ="http://api.crealeaf.com/cakes/paging"
-const apiUrl ="http://127.0.0.1:7700/notifications/api/v1/products"
+const apiUrl ="http://dkspinheiro.com/product_players.json"
 import axios from 'axios';
 
 class WalletLayout extends Component {
