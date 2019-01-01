@@ -245,17 +245,6 @@ class CampaignsLayout extends Component {
       console.log("onContextMenuClick - action : ", data.action);
     };
 
-    onContextMenu = (e, data) => {
-      const clickedProductId = data.data;
-      if (!this.state.selectedItems.includes(clickedProductId)) {
-        this.setState({
-          selectedItems :[clickedProductId]
-        });
-      }
-
-      return true;
-    };
-
     render() {
       const startIndex= (this.state.currentPage-1)*this.state.selectedPageSize
       const endIndex= (this.state.currentPage)*this.state.selectedPageSize
@@ -419,14 +408,17 @@ class CampaignsLayout extends Component {
                               </Colxx>
                             </Row>
                           </CardBody>
-                          <div className="position-relative">
-                            <p className="mb-2">
-                                <span className="float-right text-muted">
-                                    {product.raised}/{product.valuation}
-                                </span>
-                            </p>
-                            <Progress value={(this.parseCurrency(product.raised) /this.parseCurrency(product.valuation)) * 100} />
-                          </div>
+                            <div className="campaign">
+                              <div className="position-relative status">
+                                <p className="mb-2">
+                                    {product.raised} / {product.valuation}
+                                    <span className="float-right text-muted">
+                                        5 days left
+                                    </span>
+                                </p>
+                                <Progress class="progress" value={(this.parseCurrency(product.raised) /this.parseCurrency(product.valuation)) * 100} />
+                              </div>
+                            </div>
                         </Card>
                       </ContextMenuTrigger>
                     </Colxx>
@@ -441,29 +433,7 @@ class CampaignsLayout extends Component {
             </Row>
           </div>
 
-          <ContextMenu
-            id="menu_id"
-            onShow={e => this.onContextMenu(e, e.detail.data)}
-          >
-            <MenuItem
-              onClick={this.onContextMenuClick}
-              data={{ action: "copy" }}
-            >
-              <i className="simple-icon-docs" /> <span>Copy</span>
-            </MenuItem>
-            <MenuItem
-              onClick={this.onContextMenuClick}
-              data={{ action: "move" }}
-            >
-              <i className="simple-icon-drawer" /> <span>Move to archive</span>
-            </MenuItem>
-            <MenuItem
-              onClick={this.onContextMenuClick}
-              data={{ action: "delete" }}
-            >
-              <i className="simple-icon-trash" /> <span>Delete</span>
-            </MenuItem>
-          </ContextMenu>
+
         </Fragment>
       );
     }
