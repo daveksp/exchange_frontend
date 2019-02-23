@@ -414,85 +414,13 @@ class Sidebar extends Component {
                 <NavItem>
                   <NavLink to="/app/ui/alerts">
                     <i className="simple-icon-bell" />{" "}
-                    <IntlMessages id="menu.alerts" />
+                    <IntlMessages id="menu.messages" />
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink to="/app/ui/badges">
                     <i className="simple-icon-badge" />{" "}
-                    <IntlMessages id="menu.badges" />
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink to="/app/ui/buttons">
-                    <i className="simple-icon-control-play" />{" "}
-                    <IntlMessages id="menu.buttons" />
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink to="/app/ui/cards">
-                    <i className="simple-icon-layers" />{" "}
-                    <IntlMessages id="menu.cards" />
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink to="/app/ui/carousel">
-                    <i className="simple-icon-picture" />{" "}
-                    <IntlMessages id="menu.carousel" />
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink to="/app/ui/charts">
-                    <i className="simple-icon-chart" />{" "}
-                    <IntlMessages id="menu.charts" />
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink to="/app/ui/collapse">
-                    <i className="simple-icon-arrow-up" />{" "}
-                    <IntlMessages id="menu.collapse" />
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink to="/app/ui/dropdowns">
-                    <i className="simple-icon-arrow-down" />{" "}
-                    <IntlMessages id="menu.dropdowns" />
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink to="/app/ui/editors">
-                    <i className="simple-icon-book-open" />{" "}
-                    <IntlMessages id="menu.editors" />
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink to="/app/ui/forms">
-                    <i className="simple-icon-check" />{" "}
-                    <IntlMessages id="menu.forms" />
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink to="/app/ui/form-components">
-                    <i className="simple-icon-puzzle" />{" "}
-                    <IntlMessages id="menu.form-components" />
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink to="/app/ui/icons">
-                    <i className="simple-icon-star" />{" "}
-                    <IntlMessages id="menu.icons" />
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink to="/app/ui/input-groups">
-                    <i className="simple-icon-note" />{" "}
-                    <IntlMessages id="menu.input-groups" />
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink to="/app/ui/jumbotron">
-                    <i className="simple-icon-screen-desktop" />{" "}
-                    <IntlMessages id="menu.jumbotron" />
+                    <IntlMessages id="menu.groups" />
                   </NavLink>
                 </NavItem>
                 <NavItem>

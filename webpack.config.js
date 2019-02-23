@@ -58,7 +58,8 @@ module.exports = {
         compress: true,
         port: 3015, // port number
         historyApiFallback: true,
-        quiet: true
+        quiet: true,
+        disableHostCheck: true
     },
     // resolve alias (Absolute paths)
     resolve: {

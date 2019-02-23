@@ -39,7 +39,7 @@ import { ContextMenu, MenuItem, ContextMenuTrigger } from "react-contextmenu";
 function collect(props) {
   return { data: props.data };
 }
-const apiUrl ="http://dkspinheiro.com/campaigns.json"
+const apiUrl ="http://sportinvest.dkspinheiro.com/campaigns.json"
 import axios from 'axios';
 
 class CampaignsLayout extends Component {
@@ -259,7 +259,7 @@ class CampaignsLayout extends Component {
               <Colxx xxs="12">
                 <div className="mb-2">
                   <h1>
-                    <IntlMessages id="menu.image-list" />
+                    <IntlMessages id="menu.campaings" />
                   </h1>
                 </div>
 
@@ -375,7 +375,7 @@ class CampaignsLayout extends Component {
                               pill
                               className="position-absolute badge-top-left"
                             >
-                              {product.valuation}
+                              {product.valuation_repr}
                             </Badge>
                           </div>
                           <CardBody>
@@ -411,7 +411,7 @@ class CampaignsLayout extends Component {
                             <div className="campaign">
                               <div className="position-relative status">
                                 <p className="mb-2">
-                                    {product.raised} / {product.valuation}
+                                    {product.raised_repr} / {product.valuation_repr}
                                     <span className="float-right text-muted">
                                         5 days left
                                     </span>
