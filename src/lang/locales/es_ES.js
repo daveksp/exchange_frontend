@@ -30,6 +30,8 @@ Tabla de Contenido
   07.16.Navegación
   07.17.Tooltips y Popovers
   07.18.Ordenable
+08.LandingPage
+09.Transacoes
 */
 
 module.exports = {
@@ -829,5 +831,8 @@ module.exports = {
    "lp.feedback.dislike": "Thanks, we will work on this!",
    "lp.feedback.nay": "Nay",
    "lp.feedback.yay": "Yay",
- 
+
+   /* 09.Transacoes */
+   "transactions.title": "Transaçoes",
+   "transactions.refunds": "Reembolsos",
 };

@@ -31,6 +31,7 @@ Table of Contents
   07.17.Popover & Tooltip
   07.18.Sortable
 08.LandingPage
+09.Transactions
 */
 
 module.exports = {
@@ -845,5 +846,8 @@ module.exports = {
   "lp.confirmation.detail-2": "You can start using Gogo or might want to check out",
   "lp.confirmation.link": "documentation",
   "lp.confirmation.home": "GO TO HOME",
+
+  /* 09.Transactions */
+  "transactions.refunds": "Refunds",
 
 };

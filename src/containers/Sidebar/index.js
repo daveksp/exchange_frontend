@@ -299,10 +299,7 @@ class Sidebar extends Component {
                     active: ((this.state.selectedParentMenu == "menu" && this.state.viewingParentMenu=="" )|| this.state.viewingParentMenu=="menu")
                   })}
                 >
-                  <NavLink
-                    to="/app/menu"
-                    onClick={e => this.openSubMenu(e, "menu")}
-                  >
+                  <NavLink to="/app/layouts/transactions">
                     <i className="iconsmind-Data-Transfer" />{" "}
                     <IntlMessages id="menu.menu" />
                   </NavLink>
@@ -312,9 +309,7 @@ class Sidebar extends Component {
                     active: ((this.state.selectedParentMenu == "landingpage" && this.state.viewingParentMenu=="" )|| this.state.viewingParentMenu=="landingpage")
                   })}
                 >
-                  <NavLink
-                    to="/app/layouts/wallet"
-                  >
+                  <NavLink to="/app/layouts/wallet">
                     <i className="iconsmind-Wallet-2" />{" "}
                     <IntlMessages id="menu.landingpage" />
                   </NavLink>
@@ -413,38 +408,14 @@ class Sidebar extends Component {
               >
                 <NavItem>
                   <NavLink to="/app/ui/alerts">
-                    <i className="simple-icon-bell" />{" "}
+                    <i className="iconsmind-Envelope" />{" "}
                     <IntlMessages id="menu.messages" />
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink to="/app/ui/badges">
-                    <i className="simple-icon-badge" />{" "}
+                    <i className="iconsmind-People-onCloud" />{" "}
                     <IntlMessages id="menu.groups" />
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink to="/app/ui/modal">
-                    <i className="simple-icon-docs" />{" "}
-                    <IntlMessages id="menu.modal" />
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink to="/app/ui/navigation">
-                    <i className="simple-icon-cursor" />{" "}
-                    <IntlMessages id="menu.navigation" />
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink to="/app/ui/popover-tooltip">
-                    <i className="simple-icon-pin" />{" "}
-                    <IntlMessages id="menu.popover-tooltip" />
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink to="/app/ui/sortable">
-                    <i className="simple-icon-shuffle" />{" "}
-                    <IntlMessages id="menu.sortable" />
                   </NavLink>
                 </NavItem>
               </Nav>
