@@ -2,9 +2,9 @@
     "data":[
         {
             "id": 1,
-            "name" :"Pedro Geromel",
-            "title" :"Pedro Geromel",
-            "img":"https://s3.amazonaws.com/davidksp.com/pics/pic1.jpg",
+            "name" :"Everton",
+            "title" :"Everton",
+            "img":"http://sportinvest.dkspinheiro.com/assets/img/players/exchange_everton.jpg",
             "category" : "Cakes",
             "createDate" : "02.04.2018",
             "status" : "ON HOLD",
@@ -14,10 +14,10 @@
             "stock": 62
         }, {
             "id":2,
-            "name" :"Pablo",
-            "title" :"Pablo",
+            "name" :"Arthur",
+            "title" :"Arthur",
             "category" : "Cupcakes",
-            "img":"https://s3.amazonaws.com/davidksp.com/pics/pic1.jpg",
+            "img":"http://sportinvest.dkspinheiro.com/assets/img/players/exchange_arthur.jpg",
             "createDate" : "01.04.2018",
             "status" : "PROCESSED",
             "statusColor": "secondary",
@@ -26,9 +26,9 @@
             "stock": 48
         }, {
             "id":3,
-            "name" :"Tardelli",
-            "title" :"Tardelli",
-            "img":"https://s3.amazonaws.com/davidksp.com/pics/pic1.jpg",
+            "name" :"Walter Kanneman",
+            "title" :"Walter Kanneman",
+            "img":"http://sportinvest.dkspinheiro.com/assets/img/players/exchange_kanneman.jpg",
             "category" : "Cakes",
             "createDate" : "25.03.2018",
             "status" : "PROCESSED",
@@ -38,9 +38,9 @@
             "stock": 57
         },{
             "id":4,
-            "name" :"Cueva",
-            "title" :"Cueva",
-            "img":"https://s3.amazonaws.com/davidksp.com/pics/pic1.jpg",
+            "name" :"Vinicius Junior",
+            "title" :"Vinicius Junior",
+            "img":"http://sportinvest.dkspinheiro.com/assets/img/players/exchange_vinicius-junior.jpg",
             "category" : "Cakes",
             "createDate" : "21.03.2018",
             "status" : "PROCESSED",
@@ -50,10 +50,10 @@
             "stock": 41
         },{
             "id":5,
-            "name" :"Dentinho",
-            "title" :"Dentinho",
+            "name" :"Pedrinho",
+            "title" :"Pedrinho",
             "category" : "Cupcakes",
-            "img":"https://s3.amazonaws.com/davidksp.com/pics/pic1.jpg",
+            "img":"http://sportinvest.dkspinheiro.com/assets/img/players/exchange_pedrinho.jpg",
             "createDate" : "02.06.2018",
             "status" : "ON HOLD",
             "statusColor": "primary",
@@ -62,9 +62,9 @@
             "stock": 23
         }, {
             "id":6,
-            "name" :"Dario Bennedeto",
-            "title" :"Dario Bennedeto",
-            "img":"https://s3.amazonaws.com/davidksp.com/pics/pic1.jpg",
+            "name" :"Thiago Neves",
+            "title" :"Thiago Neves",
+            "img":"http://sportinvest.dkspinheiro.com/assets/img/players/exchange_thiago_neves.jpg",
             "category" : "Desserts",
             "createDate" : "14.07.2018",
             "status" : "PROCESSED",
@@ -74,9 +74,9 @@
             "stock": 34
         },{
             "id":7,
-            "name" :"Walter Kanneman",
-            "title" :"Walter Kanneman",
-            "img":"https://s3.amazonaws.com/davidksp.com/pics/pic1.jpg",
+            "name" :"Dede",
+            "title" :"Dede",
+            "img":"http://sportinvest.dkspinheiro.com/assets/img/players/exchange_dede.jpg",
             "category" : "Desserts",
             "createDate" : "05.02.2018",
             "status" : "PROCESSED",
@@ -86,9 +86,9 @@
             "stock": 31
         },{
             "id":8,
-            "name" :"Rodrigo Dourado",
-            "title" :"Rodrigo Dourado",
-            "img":"https://s3.amazonaws.com/davidksp.com/pics/pic1.jpg",
+            "name" :"Pablo",
+            "title" :"Pablo",
+            "img":"http://sportinvest.dkspinheiro.com/assets/img/players/exchange_pablo.jpg",
             "category" : "Cakes",
             "createDate" : "18.08.2018",
             "status" : "ON HOLD",
@@ -97,106 +97,10 @@
             "sales": 887,
             "stock": 21
         },{
-            "id":9,
-            "name" :"Thiago Neves",
-            "title" :"Thiago Neves",
-            "img":"https://s3.amazonaws.com/davidksp.com/pics/pic1.jpg",
-            "category" : "Cakes",
-            "createDate" : "15.03.2018",
-            "status" : "ON HOLD",
-            "statusColor": "primary",
-            "description" :"White chocolate strawberry yogurt cake decorated with fresh fruits and chocolate",
-            "sales": 865,
-            "stock": 53
-        },{
-            "id":10,
-            "name" :"Ewerton",
-            "title" :"Ewerton",
-            "img":"https://s3.amazonaws.com/davidksp.com/pics/pic1.jpg",
-            "category" : "Cupcakes",
-            "createDate" : "11.06.2018",
-            "status" : "PROCESSED",
-            "statusColor": "secondary",
-            "description" :"Christmas fruit cake, pudding on top",
-            "sales": 824,
-            "stock": 55
-        },{
-            "id":11,
-            "name" :"Arthur",
-            "title" :"Arthur",
-            "img":"https://s3.amazonaws.com/davidksp.com/pics/pic1.jpg",
-            "category" : "Cakes",
-            "createDate" : "10.04.2018",
-            "status" : "ON HOLD",
-            "statusColor": "primary",
-            "description" :"Wedding cake decorated with donuts and wild berries",
-            "sales": 714,
-            "stock": 12
-        },{
-            "id":12,
-            "name" :"Vinicius Junior",
-            "title" :"Vinicius Junior",
-            "img":"https://s3.amazonaws.com/davidksp.com/pics/pic1.jpg",
-            "category" : "Cakes",
-            "createDate" : "22.07.2018",
-            "status" : "PROCESSED",
-            "statusColor": "secondary",
-            "description" :"Christmas fruit cake, pudding on top",
-            "sales": 702,
-            "stock": 14
-        },{
-            "id":13,
-            "name" :"Arao",
-            "title" :"Arao",
-            "img":"https://s3.amazonaws.com/davidksp.com/pics/pic1.jpg",
-            "category" : "Cakes",
-            "createDate" : "22.08.2018",
-            "status" : "ON HOLD",
-            "statusColor": "primary",
-            "description" :"White chocolate strawberry yogurt cake decorated with fresh fruits and chocolate",
-            "sales": 689,
-            "stock": 78
-        },{
-            "id":14,
-            "name" :"Rodrigo Caio",
-            "title" :"Rodrigo Caio",
-            "img":"https://s3.amazonaws.com/davidksp.com/pics/pic1.jpg",
-            "category" : "Cakes",
-            "createDate" : "22.07.2018",
-            "status" : "PROCESSED",
-            "statusColor": "secondary",
-            "description" :"Delicious vegan chocolate cake",
-            "sales": 645,
-            "stock": 55
-        },{
-            "id":15,
-            "name" :"Dede",
-            "title" :"Dede",
-            "img":"https://s3.amazonaws.com/davidksp.com/pics/pic1.jpg",
-            "category" : "Cakes",
-            "createDate" : "10.09.2018",
-            "status" : "ON HOLD",
-            "statusColor": "primary",
-            "description" :"Cheesecake with fresh berries and mint for dessert",
-            "sales": 632,
-            "stock": 20
-        },{
-            "id":16,
-            "name" :"Bruno Silva",
-            "title" :"Bruno Silva",
-            "img":"https://s3.amazonaws.com/davidksp.com/pics/pic1.jpg",
-            "category" : "Cakes",
-            "createDate" : "18.02.2018",
-            "status" : "ON HOLD",
-            "statusColor": "primary",
-            "description" :"Chocolate cake with mascarpone",
-            "sales": 621,
-            "stock": 6
-        },{
             "id":17,
             "name" :"Marquinhos Gabriel",
             "title" :"Marquinhos Gabriel",
-            "img":"https://s3.amazonaws.com/davidksp.com/pics/pic1.jpg",
+            "img":"http://sportinvest.dkspinheiro.com/assets/img/players/exchange_marquinhos_gabriel.jpg",
             "category" : "Cakes",
             "createDate" : "12.01.2019",
             "status" : "PROCESSED",
@@ -208,7 +112,7 @@
             "id":18,
             "name" :"Paulinho",
             "title" :"Paulinho",
-            "img":"https://s3.amazonaws.com/davidksp.com/pics/pic1.jpg",
+            "img":"http://sportinvest.dkspinheiro.com/assets/img/players/exchange_paulinho.jpg",
             "category" : "Cakes",
             "createDate" : "04.02.2019",
             "status" : "PROCESSED",
@@ -216,30 +120,6 @@
             "description" :"Homemade cheesecake with fresh berries and mint",
             "sales": 574,
             "stock": 16
-        },{
-            "id":19,
-            "name" :"Carlos Eduardo",
-            "title" :"Carlos Eduardo",
-            "img":"https://s3.amazonaws.com/davidksp.com/pics/pic1.jpg",
-            "category" : "Desserts",
-            "createDate" : "04.03.2018",
-            "status" : "ON HOLD",
-            "statusColor": "primary",
-            "description" :"Cheesecake with chocolate cookies and Cream biscuits",
-            "sales": 562,
-            "stock": 9
-        },{
-            "id":20,
-            "name" :"Bressan",
-            "title" :"Bressan",
-            "img":"https://s3.amazonaws.com/davidksp.com/pics/pic1.jpg",
-            "category" : "Cupcakes",
-            "createDate" : "16.01.2018",
-            "status" : "ON HOLD",
-            "statusColor": "primary",
-            "description" :"Wedding cake with flowers Macarons and blueberries",
-            "sales": 524,
-            "stock": 14
         }
     ]
 }

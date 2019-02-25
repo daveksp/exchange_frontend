@@ -139,12 +139,107 @@ class TransactionsLayout extends Component {
         <Row>
           <Colxx xxs="12">
             <BreadcrumbContainer
-              heading={<IntlMessages id="menu.default" />}
+              heading={<IntlMessages id="transactions.title" />}
               match={this.props.match}
             />
             <Separator className="mb-5" />
           </Colxx>
         </Row>
+
+
+        <Sortable
+          options={{
+            handle: ".handle"
+          }}
+          className="row"
+        >
+          <Colxx xl="3" lg="6" className="mb-4">
+            <Card>
+              <CardHeader className="p-0 position-relative">
+                <div className="position-absolute handle card-icon">
+                  <i className="simple-icon-shuffle" />
+                </div>
+              </CardHeader>
+              <CardBody className="d-flex justify-content-between align-items-center">
+                <CardTitle className="mb-0">
+                  <IntlMessages id="dashboards.payment-status" />
+                </CardTitle>
+                <div className="progress-bar-circle">
+                  <CircularProgressbar
+                    strokeWidth={4}
+                    percentage={64}
+                    text={"64%"}
+                  />
+                </div>
+              </CardBody>
+            </Card>
+          </Colxx>
+          <Colxx xl="3" lg="6" className="mb-4">
+            <Card>
+              <CardHeader className="p-0 position-relative">
+                <div className="position-absolute handle card-icon">
+                  <i className="simple-icon-shuffle" />
+                </div>
+              </CardHeader>
+              <CardBody className="d-flex justify-content-between align-items-center">
+                <CardTitle className="mb-0">
+                  <IntlMessages id="dashboards.work-progress" />
+                </CardTitle>
+                <div className="progress-bar-circle">
+                  <CircularProgressbar
+                    strokeWidth={4}
+                    percentage={75}
+                    text={"75%"}
+                  />
+                </div>
+              </CardBody>
+            </Card>
+          </Colxx>
+          <Colxx xl="3" lg="6" className="mb-4">
+            <Card>
+              <CardHeader className="p-0 position-relative">
+                <div className="position-absolute handle card-icon">
+                  <i className="simple-icon-shuffle" />
+                </div>
+              </CardHeader>
+              <CardBody className="d-flex justify-content-between align-items-center">
+                <CardTitle className="mb-0">
+                  <IntlMessages id="dashboards.tasks-completed" />
+                </CardTitle>
+                <div className="progress-bar-circle">
+                  <CircularProgressbar
+                    strokeWidth={4}
+                    percentage={32}
+                    text={"32%"}
+                  />
+                </div>
+              </CardBody>
+            </Card>
+          </Colxx>
+          <Colxx xl="3" lg="6" className="mb-4">
+            <Card>
+              <CardHeader className="p-0 position-relative">
+                <div className="position-absolute handle card-icon">
+                  <i className="simple-icon-shuffle" />
+                </div>
+              </CardHeader>
+              <CardBody className="d-flex justify-content-between align-items-center">
+                <CardTitle className="mb-0">
+                  <IntlMessages id="dashboards.payments-done" />
+                </CardTitle>
+                <div className="progress-bar-circle">
+                  <CircularProgressbar
+                    strokeWidth={4}
+                    percentage={60}
+                    text={"45%"}
+                  />
+                </div>
+              </CardBody>
+            </Card>
+          </Colxx>
+        </Sortable>
+
+
         <Row>
           <Colxx lg="12" xl="6">
             <div className="icon-cards-row">
@@ -231,7 +326,7 @@ class TransactionsLayout extends Component {
                   </div>
                   <CardBody>
                     <CardTitle>
-                      <IntlMessages id="dashboards.sales" />
+                      <IntlMessages id="transactions.my-shares" />
                     </CardTitle>
                     <div className="dashboard-line-chart">
                       <LineShadow {...lineChartConfig} />
@@ -401,42 +496,6 @@ class TransactionsLayout extends Component {
         </Row>
 
         <Row>
-          <Colxx xl="6" lg="12" className="mb-4">
-            <Card>
-              <CardBody>
-                <CardTitle>
-                  <IntlMessages id="dashboards.calendar" />
-                </CardTitle>
-                <BigCalendar
-                  style={{ minHeight: "500px" }}
-                  events={events}
-                  views={["month"]}
-                  components={{
-                    toolbar: CalendarToolbar
-                  }}
-                />
-              </CardBody>
-            </Card>
-          </Colxx>
-          <Colxx xl="6" lg="12" className="mb-4">
-            <Card className="h-100">
-              <CardBody>
-                <CardTitle>
-                  <IntlMessages id="dashboards.best-sellers" />
-                </CardTitle>
-                <ReactTable
-                  defaultPageSize={6}
-                  data={dataTableData}
-                  columns={dataTableColumns}
-                  minRows={0}
-                  PaginationComponent={DataTablePagination}
-                />
-              </CardBody>
-            </Card>
-          </Colxx>
-        </Row>
-
-        <Row>
           <Colxx sm="12" lg="4" className="mb-4">
             <Card className="h-100">
               <CardBody>
@@ -510,97 +569,7 @@ class TransactionsLayout extends Component {
           </Colxx>
         </Row>
 
-        <Sortable
-          options={{
-            handle: ".handle"
-          }}
-          className="row"
-        >
-          <Colxx xl="3" lg="6" className="mb-4">
-            <Card>
-              <CardHeader className="p-0 position-relative">
-                <div className="position-absolute handle card-icon">
-                  <i className="simple-icon-shuffle" />
-                </div>
-              </CardHeader>
-              <CardBody className="d-flex justify-content-between align-items-center">
-                <CardTitle className="mb-0">
-                  <IntlMessages id="dashboards.payment-status" />
-                </CardTitle>
-                <div className="progress-bar-circle">
-                  <CircularProgressbar
-                    strokeWidth={4}
-                    percentage={64}
-                    text={"64%"}
-                  />
-                </div>
-              </CardBody>
-            </Card>
-          </Colxx>
-          <Colxx xl="3" lg="6" className="mb-4">
-            <Card>
-              <CardHeader className="p-0 position-relative">
-                <div className="position-absolute handle card-icon">
-                  <i className="simple-icon-shuffle" />
-                </div>
-              </CardHeader>
-              <CardBody className="d-flex justify-content-between align-items-center">
-                <CardTitle className="mb-0">
-                  <IntlMessages id="dashboards.work-progress" />
-                </CardTitle>
-                <div className="progress-bar-circle">
-                  <CircularProgressbar
-                    strokeWidth={4}
-                    percentage={75}
-                    text={"75%"}
-                  />
-                </div>
-              </CardBody>
-            </Card>
-          </Colxx>
-          <Colxx xl="3" lg="6" className="mb-4">
-            <Card>
-              <CardHeader className="p-0 position-relative">
-                <div className="position-absolute handle card-icon">
-                  <i className="simple-icon-shuffle" />
-                </div>
-              </CardHeader>
-              <CardBody className="d-flex justify-content-between align-items-center">
-                <CardTitle className="mb-0">
-                  <IntlMessages id="dashboards.tasks-completed" />
-                </CardTitle>
-                <div className="progress-bar-circle">
-                  <CircularProgressbar
-                    strokeWidth={4}
-                    percentage={32}
-                    text={"32%"}
-                  />
-                </div>
-              </CardBody>
-            </Card>
-          </Colxx>
-          <Colxx xl="3" lg="6" className="mb-4">
-            <Card>
-              <CardHeader className="p-0 position-relative">
-                <div className="position-absolute handle card-icon">
-                  <i className="simple-icon-shuffle" />
-                </div>
-              </CardHeader>
-              <CardBody className="d-flex justify-content-between align-items-center">
-                <CardTitle className="mb-0">
-                  <IntlMessages id="dashboards.payments-done" />
-                </CardTitle>
-                <div className="progress-bar-circle">
-                  <CircularProgressbar
-                    strokeWidth={4}
-                    percentage={60}
-                    text={"45%"}
-                  />
-                </div>
-              </CardBody>
-            </Card>
-          </Colxx>
-        </Sortable>
+
 
         <Row>
           <Colxx sm="12" md="6" className="mb-4">

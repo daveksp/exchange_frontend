@@ -98,6 +98,7 @@ module.exports = {
   "menu.popover-tooltip": "Popover & Tooltip",
   "menu.sortable": "Sortable",
   "menu.menu": "Transactions",
+  "menu.transactions": "Transactions",
   "menu.subhidden": "Subhidden",
   "menu.hidden": "Hidden",
   "menu.visible": "Visible",
@@ -848,6 +849,7 @@ module.exports = {
   "lp.confirmation.home": "GO TO HOME",
 
   /* 09.Transactions */
+  "transactions.title": "Transactions",
   "transactions.refunds": "Refunds",
-
+  "transactions.my-shares": "My Shares"
 };

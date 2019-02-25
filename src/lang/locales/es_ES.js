@@ -98,6 +98,7 @@ module.exports = {
   "menu.popover-tooltip": "Tooltips y Popovers",
   "menu.sortable": "Ordenable",
   "menu.menu": "Menú",
+  "menu.transactions": "Transações",
   "menu.subhidden": "Sub Oculto",
   "menu.hidden": "Oculto",
   "menu.visible": "Visible",
@@ -833,6 +834,7 @@ module.exports = {
    "lp.feedback.yay": "Yay",
 
    /* 09.Transacoes */
-   "transactions.title": "Transaçoes",
+   "transactions.title": "Transações",
    "transactions.refunds": "Reembolsos",
+   "transactions.my-shares": "Minhas ações"
 };
