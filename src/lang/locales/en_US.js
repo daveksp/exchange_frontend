@@ -130,6 +130,7 @@ module.exports = {
   "dashboards.refunds": "Refunds",
   "dashboards.recent-orders": "Recent Orders",
   "dashboards.product-categories": "Product Categories",
+  "dashboards.my-investments": "My Investments",
   "dashboards.cakes": "Cakes",
   "dashboards.tickets": "Tickets",
   "dashboards.calendar": "Calendar",

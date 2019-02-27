@@ -292,7 +292,7 @@ export const conversionChartConfig = {
       tooltips: chartTooltip
     },
     data: {
-      labels: ["Cakes", "Desserts", "Cupcakes"],
+      labels: ["Neutrals", "Profitable", "Losses"],
       datasets: [
         {
           data: [80, 90, 70],

@@ -402,7 +402,7 @@ class TransactionsLayout extends Component {
             <Card>
               <CardBody>
                 <CardTitle>
-                  <IntlMessages id="dashboards.product-categories" />
+                  <IntlMessages id="dashboards.my-investments" />
                 </CardTitle>
                 <div className="dashboard-donut-chart">
                   <PolarShadow {...polarChartConfig} />

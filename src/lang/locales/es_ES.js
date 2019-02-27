@@ -129,6 +129,7 @@ module.exports = {
   "dashboards.refunds": "Reembolso",
   "dashboards.recent-orders": "Pedidos Recientas",
   "dashboards.product-categories": "Categorías de Producto",
+  "dashboards.my-investments": "Meus Investimento",
   "dashboards.cakes": "Tortas",
   "dashboards.tickets": "Entradas",
   "dashboards.calendar": "Calendario",
