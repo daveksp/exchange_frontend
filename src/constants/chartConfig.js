@@ -317,7 +317,7 @@ export const conversionChartConfig = {
       labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
       datasets: [
         {
-          label: "Total Orders",
+          label: "My Profit",
           borderColor: colors.themeColor1,
           pointBorderColor: colors.themeColor1,
           pointHoverBackgroundColor: colors.themeColor1,
@@ -342,7 +342,7 @@ export const conversionChartConfig = {
       labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
       datasets: [
         {
-          label: "Pending Orders",
+          label: "Money Invested",
           borderColor: colors.themeColor1,
           pointBorderColor: colors.themeColor1,
           pointHoverBackgroundColor: colors.themeColor1,
@@ -367,7 +367,7 @@ export const conversionChartConfig = {
       labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
       datasets: [
         {
-          label: "Total Orders",
+          label: "My Players",
           borderColor: colors.themeColor1,
           pointBorderColor: colors.themeColor1,
           pointHoverBackgroundColor: colors.themeColor1,
@@ -392,7 +392,7 @@ export const conversionChartConfig = {
       labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
       datasets: [
         {
-          label: "Total Orders",
+          label: "Teams I Invested",
           borderColor: colors.themeColor1,
           pointBorderColor: colors.themeColor1,
           pointHoverBackgroundColor: colors.themeColor1,
