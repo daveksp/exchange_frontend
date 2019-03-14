@@ -81,6 +81,12 @@ class LoginLayout extends Component {
                           <IntlMessages id="user.login-button" />
                         </Button>
                       </div>
+
+                      <div className="d-flex justify-content-between align-items-center">
+                        <NavLink to={`/register`}>
+                          <IntlMessages id="lp.login.register" />
+                        </NavLink>
+                      </div>
                     </Form>
                   </div>
                 </Card>
